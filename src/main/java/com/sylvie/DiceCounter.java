@@ -6,9 +6,9 @@ public class DiceCounter {
         for (int i = 0; i < 10; i++) {
             Dice dice = new Dice();
             Dice d2 = new Dice();
-            System.out.println(dice.point);
-            String s = dice.isMax() ? "*" : "";
-            System.out.println(s);
+            System.out.print(dice.point);
+            System.out.println(dice.isMax() ? "*" : "");
+
             /*if(dice.isMax){
                 System.out.println("*");
             }else{
@@ -19,7 +19,7 @@ public class DiceCounter {
         int max = 0;
         int point = 0;
         for (int i = 0; i < 6; i++) {
-            System.out.println((i+1)+" "+counters[i]);
+            System.out.println((i+1)+" "+counters[i]+" times");
             if (counters[i]>max){
                 max = counters[i];
                 point= i+1;
